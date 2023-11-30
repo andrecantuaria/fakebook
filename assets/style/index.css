@@ -256,7 +256,15 @@ nav ul li + li {
     color: var(--app-dark-gray);
 }
 
+.file-name-display {
+    font-size: 13px;
+}
+
 /*--------------POSTS SECTION------------------*/
+.all-posts .post-container {
+    display: none;
+}
+
 .post-container {
     display: inline-block;
     width: 650px;
@@ -295,28 +303,15 @@ nav ul li + li {
 
 .post-img {
     width: 100%;
-    height: 615px;
+    height: 615px; 
     border-radius: 5px;
-    background: url('../img/airplane.png') center/cover;
-    background-color: none;
-}
-
-.post-text-with-img {
-    width: 615px;
-    background-color: none;
-    margin-bottom: 15px;
-}
-
-.post-text-without-img {
-    width: 615px;
-    background-color: none;
-    margin-bottom: 0;
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 
 /*--------------MODAL------------------*/
 
-/* Styling for the modal container */
 .modal {
     display: none;
     position: fixed;
@@ -329,7 +324,6 @@ nav ul li + li {
     align-items: center;
 }
 
- /* Styling for the modal content */
 .modal-content {
     background: #fff;
     width: 400px;
@@ -356,7 +350,6 @@ nav ul li + li {
     line-height: 1.6;
 }
 
-/* Styling for the close button */
 .close {
     cursor: pointer;
     position: absolute;

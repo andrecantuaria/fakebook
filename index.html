@@ -39,7 +39,7 @@
                     </ul>
                 </nav>
                 <div class="subscribers">
-                    <button class="profile">open</button> 
+                    <button class="profile"></button> 
                 </div>
             </div>
         </header>
@@ -63,56 +63,39 @@
                         </div>
                     </div>
 
-                    <!-- Form -->
-                    <div class="form-container">
-                        <form><textarea class="input" placeholder="Hey there, what's new?" rows="4" ></textarea></form>
+                   <!-- Form -->
+                   <div class="form-container">
+                    <form>
+                        <textarea class="input" placeholder="Hey there, what's new?" rows="4"></textarea>
                         <div class="upload-post-btn-row">
                             <div class="upload-image-info-container">
-                                <div class ="upload-img-btn"><i class="fa-solid fa-image"></i></div>
-                                <div class ="upload-info"><p>beach.jpg</p></div>
+                                <label for="fileInput" class="upload-img-btn"><i class="fa-solid fa-image"></i></label>
+                                <input type="file" id="fileInput" class="upload-img-btn" style="display: none">
+                                <div class="upload-info">
+                                    <div class="file-name-display"></div>
+                                </div>
                             </div>
-                            
-                            <div class="post-btn">Post</div> 
+                            <div class="post-btn">Post</div>
                         </div>
-                    </div>
+                    </form>
+                </div>
 
                     <!-- Post -->
-                    <div class="post-container">
-                        <div class="post-header">
-                            <div class="profile-container">
-                                <div class="profile"></div>
-                                <div class="user-name"><p>Andre Cantuaria</p></div>
+                    <div class="all-posts">
+                        <div class="post-container">
+                            <div class="post-header">
+                                <div class="profile-container">
+                                    <div class="profile"></div>
+                                    <div class="user-name"><p></p></div>
+                                </div>
+                                <div class="date"><p></p></div>
                             </div>
-                            <div class="date"><p>Nov 29, 2023</p></div>
-                        </div>
-                        <div class="post-text-with-img">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet sunt 
-                                veniam error deserunt? Impedit omnis quae temporibus blanditiis molestiae incidunt 
-                                cum sequi odio, molestias iusto vitae aut quibusdam consequuntur?
-                                Sapiente eveniet sunt veniam error deserunt? Impedit omnis quae temporibus blanditiis 
-                                molestiae incidunt cum sequi odio, molestias iusto vitae aut quibusdam consequuntur? :)</p>
-                        </div>
-                        <div class="post-img"></div>
-                    </div>
-
-                    <div class="post-container">
-                        <div class="post-header">
-                            <div class="profile-container">
-                                <div class="profile"></div>
-                                <div class="user-name"><p>Andre Cantuaria</p></div>
+                            <div class="post-text-with-img">
+                                <p></p>
                             </div>
-                            <div class="date"><p>Nov 29, 2023</p></div>
+                            <div class="post-img"></div>
                         </div>
-                        <div class="post-text-with-img">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet sunt 
-                                veniam error deserunt? Impedit omnis quae temporibus blanditiis molestiae incidunt 
-                                cum sequi odio, molestias iusto vitae aut quibusdam consequuntur?
-                                Sapiente eveniet sunt veniam error deserunt? Impedit omnis quae temporibus blanditiis 
-                                molestiae incidunt cum sequi odio, molestias iusto vitae aut quibusdam consequuntur? :)</p>
-                        </div>
-                        <div class="post-img"></div>
                     </div>
-
                 </div>
             </div>
   
