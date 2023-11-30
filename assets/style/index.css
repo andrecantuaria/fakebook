@@ -165,6 +165,7 @@ nav ul li + li {
     width: 45px;
     height: 45px;
     background: url('../img/profile-picture.jpg') center/cover;
+    cursor: pointer;
 }
 
 /*--------------FORM SECTION------------------*/
@@ -313,4 +314,36 @@ nav ul li + li {
 }
 
 
+/*--------------MODAL------------------*/
 
+/* Styling for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Styling for the modal content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the close button */
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}

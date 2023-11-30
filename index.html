@@ -19,6 +19,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,500;1,6..12,500&family=Playball&family=Roboto+Mono:wght@300;400;500;600&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+        <!-- Script -->
+        <script src="./assets/script/index.js" defer></script>
     </head>
     <body>
         <header>
@@ -36,13 +39,22 @@
                     </ul>
                 </nav>
                 <div class="subscribers">
-                    <div class="profile"></div>
+                    <button class="profile">open</button> 
                 </div>
             </div>
         </header>
         <main>
             <div class="center">
-                <div class="container">   
+                <div class="container">
+                    <!-- Modal -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <p class="user-info"></p>
+                        </div>
+                    </div>
+
+                    <!-- Form -->
                     <div class="form-container">
                         <form><textarea class="input" placeholder="Hey there, what's new?" rows="4" ></textarea></form>
                         <div class="upload-post-btn-row">
@@ -54,7 +66,8 @@
                             <div class="post-btn">Post</div> 
                         </div>
                     </div>
-
+                    
+                    <!-- Post -->
                     <div class="post-container">
                         <div class="post-header">
                             <div class="profile-container">
